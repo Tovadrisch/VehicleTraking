@@ -1,0 +1,21 @@
+{
+  "vehiclesList": "List of Vehicles",
+  "vehiclesMap": "Map of Vehicles",
+  "settings": "Settings",
+  "driver": "Driver: ",
+  "category": "Category: ",
+  "contactNumber": "Contact number: ",
+  "vehicle": "V",
+  "cargo": "Cargo",
+  "passenger": "Passenger",
+  "special": "Special",
+  "all": "All",
+
+  "closeButton": "Close",
+  "phoneCallButton": "Call",
+  "sendMessageButton": "Write",
+  "applyButton": "Apply",
+  "displayedCategoriesButton": "Displayed categories: ",
+  "swapToRussianButton": "Translate the application into Russian",
+  "swapToEnglishButton": "Translate the application into English"
+}

@@ -1,0 +1,21 @@
+{
+  "vehiclesList": "Список ТС",
+  "vehiclesMap": "Карта ТС",
+  "settings": "Настройки",
+  "driver": "Водитель: ",
+  "category": "Категория: ",
+  "contactNumber": "Контактный номер: ",
+  "vehicle": "ТС",
+  "cargo": "Грузовой",
+  "passenger": "Пассажирский",
+  "special": "Спецтранспорт",
+  "all": "Все",
+
+  "closeButton": "Закрыть",
+  "phoneCallButton": "Позвонить",
+  "sendMessageButton": "Написать",
+  "applyButton": "Применить",
+  "displayedCategoriesButton": "Отображаемые категории: ",
+  "swapToRussianButton": "Перевести приложение на русский язык",
+  "swapToEnglishButton": "Перевести приложение на английский язык"
+}

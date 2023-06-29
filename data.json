@@ -1,0 +1,104 @@
+{
+  "vehicles": [
+    {
+      "id": "cargo339",
+      "driver": "Shirley Knight",
+      "category": "cargo",
+      "number": "10000",
+      "coordinates": {
+        "latitude": 55.703059,
+        "longitude": 37.507848
+      }
+    },
+    {
+      "id": "cargo465",
+      "driver": "Mary Thompson",
+      "category": "cargo",
+      "number": "11000",
+      "coordinates": {
+        "latitude": 55.715114,
+        "longitude": 37.434724
+      }
+    },
+    {
+      "id": "cargo696",
+      "driver": "Kyle Williams",
+      "category": "cargo",
+      "number": "10100",
+      "coordinates": {
+        "latitude": 55.657097,
+        "longitude": 37.828848
+      }
+    },
+    {
+      "id": "passenger404",
+      "driver": "David Ruiz",
+      "category": "passenger",
+      "number": "10010",
+      "coordinates": {
+        "latitude": 55.885135,
+        "longitude": 37.452598
+      }
+    },
+    {
+      "id": "passenger993",
+      "driver": "Raymond Jones",
+      "category": "passenger",
+      "number": "10001",
+      "coordinates": {
+        "latitude": 55.753990,
+        "longitude": 37.638157
+      }
+    },
+    {
+      "id": "passenger306",
+      "driver": "Tammy Freeman",
+      "category": "passenger",
+      "number": "11100",
+      "coordinates": {
+        "latitude": 55.757377,
+        "longitude": 37.613491
+      }
+    },
+    {
+      "id": "passenger748",
+      "driver": "Steve Gibson",
+      "category": "passenger",
+      "number": "11110",
+      "coordinates": {
+        "latitude": 55.765220,
+        "longitude": 37.608215
+      }
+    },
+    {
+      "id": "passenger222",
+      "driver": "Joseph Briggs",
+      "category": "passenger",
+      "number": "11111",
+      "coordinates": {
+        "latitude": 55.824559,
+        "longitude": 37.640033
+      }
+    },
+    {
+      "id": "special108",
+      "driver": "Agnes Cohen",
+      "category": "special",
+      "number": "10110",
+      "coordinates": {
+        "latitude": 55.792037,
+        "longitude": 37.557247
+      }
+    },
+    {
+      "id": "special384",
+      "driver": "Patricia Baker",
+      "category": "special",
+      "number": "10111",
+      "coordinates": {
+        "latitude": 55.668439,
+        "longitude": 37.661728
+      }
+    }
+  ]
+}
