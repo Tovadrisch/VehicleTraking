@@ -21,9 +21,9 @@ type props = NativeStackScreenProps<BottomTabParamList, "VehicleMap">;
 export default function VehicleMapScreen({ route }: props) {
     // Получение функции для получения локализированных строк из контекста языка
     const { get } = useContext(LanguageContext);
-    // Хуки для хранения и изменения состояния переменных displayMoreInfo (флаг, отвечающий за отображение на экране окна с информацией о ТС)
+    // Хуки для хранения и изменения состояния переменных displayDetails (флаг, отвечающий за отображение на экране окна с информацией о ТС)
     // и selectedVehicleInfo (объект, хранящий информацию о выбранном ТС на карте)
-    const [displayMoreInfo, setDisplayMoreInfo] = useState(false);
+    const [displayDetails, setDisplayDetails] = useState(false);
     const [selectedVehicleInfo, setSelectedVehicleInfo] = useState({});
     // Создание ссылки, которая будет указывать на компонент "MapView" с помощью хука useRef
     const mapRef = useRef(null);
@@ -49,7 +49,7 @@ export default function VehicleMapScreen({ route }: props) {
     // Обработка нажатия на маркер на карте
     const onMarkerPress = (vehicle: object, name: string) => {
         setSelectedVehicleInfo({ ...vehicle, name });
-        setDisplayMoreInfo(true);
+        setDisplayDetails(true);
         mapRef.current.animateCamera({
             center: {
                 latitude: vehicle["coordinates"]["latitude"],
@@ -65,7 +65,7 @@ export default function VehicleMapScreen({ route }: props) {
     // Обработка нажатия на кнопку "Закрыть"
     const onClosePress = () => {
         setSelectedVehicleInfo({});
-        setDisplayMoreInfo(false);
+        setDisplayDetails(false);
     };
 
     // Обработка нажатия на кнопку "Позвонить"
@@ -93,8 +93,8 @@ export default function VehicleMapScreen({ route }: props) {
             </MapView>
             {/* Проверка флага, отвечающего за отображения окна информации о выбранном ТС на карте */}
             {
-                displayMoreInfo ?
-                    <View style={styles.moreInfoCard} >
+                displayDetails ?
+                    <View style={styles.detailsCard} >
                         <View style={styles.closeButtonWrap} >
                             <Button
                                 text={get("closeButton")}
@@ -125,7 +125,7 @@ export default function VehicleMapScreen({ route }: props) {
 
 // Стили
 const styles = StyleSheet.create({
-    moreInfoCard: {
+    detailsCard: {
         position: "absolute",
         alignSelf: "center",
         bottom: 10,

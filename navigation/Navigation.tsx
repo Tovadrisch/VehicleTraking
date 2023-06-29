@@ -72,8 +72,8 @@ function RootNavigator() {
                 }}
             />
         </BottomTab.Navigator>
-    )
-}
+    );
+};
 
 // Подключение стилей
 const styles = StyleSheet.create({
@@ -90,4 +90,4 @@ const styles = StyleSheet.create({
     label: {
         fontSize: 14
     }
-})
+});
