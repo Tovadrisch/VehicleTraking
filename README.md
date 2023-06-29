@@ -16,7 +16,7 @@ git clone https://github.com/Tovadrisch/VehicleTraking.git
 2. Перейдите в директорию проекта.
 
 ```shell
-cd Traking
+cd VehicleTraking
 ```
 
 3. Установите зависимости
