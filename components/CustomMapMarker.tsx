@@ -4,6 +4,7 @@ import { useContext, useState } from "react";
 
 import data from "../data.json"
 import { LanguageContext } from "../localization/LanguageContext";
+import Colors from "../constants/Colors";
 
 // Определение типов
 type props = {
@@ -48,8 +49,7 @@ const styles = StyleSheet.create({
     },
     markerText: {
         fontSize: 8,
-        fontWeight: "bold",
-        color: "#000"
+        fontWeight: "bold"
     }
 });
 

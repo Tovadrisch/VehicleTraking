@@ -7,9 +7,10 @@ import Communications from 'react-native-communications';
 
 import data from "../data.json";
 import CustomMapMarker from "../components/CustomMapMarker";
-import { BottomTabParamList } from "../navigation";
+import { BottomTabParamList } from "../navigation/Navigation";
 import { LanguageContext } from "../localization/LanguageContext";
 import Button from "../components/Button";
+import Colors from "../constants/Colors";
 
 // Переменная, содержащая текстовое сообщение, подставляемое в мессенджер при открытии чата
 const whatsAppMessage = "Добрый день, подскажите пожалуйста, какой номер заказа у вас сейчас в работе";
@@ -129,10 +130,19 @@ const styles = StyleSheet.create({
         alignSelf: "center",
         bottom: 10,
         padding: 10,
-        borderWidth: 1,
+        borderWidth: 2,
         borderRadius: 15,
+        borderColor: Colors.additional,
         width: "90%",
-        backgroundColor: 'white'
+        backgroundColor: Colors.main,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: -2,
+            height: 4,
+        },
+        shadowOpacity: 0.8,
+        shadowRadius: 4,
+        elevation: 5
     },
     closeButtonWrap: {
         position: "absolute",

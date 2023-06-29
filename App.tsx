@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { SafeAreaProvider } from 'react-native-safe-area-context';
 
-import Navigation from "./navigation";
+import Navigation from "./navigation/Navigation";
 import { LanguageProvider } from "./localization/LanguageContext";
 
 // Обертывание приложения в провайдеры , обеспечивающие смену языка (LanguageProvider) и безопасные области
@@ -17,4 +17,4 @@ export default function App() {
             </SafeAreaProvider>
         </LanguageProvider>
     );
-}
+};

@@ -1,6 +1,7 @@
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import { useContext } from "react";
 import { LanguageContext } from "../localization/LanguageContext";
+import Colors from "../constants/Colors";
 
 // Определение типов
 type props = {
@@ -32,9 +33,18 @@ const styles = StyleSheet.create({
         width: "90%",
         padding: 10,
         marginVertical: 5,
-        borderWidth: 1,
+        borderWidth: 2,
         borderRadius: 15,
-        backgroundColor: "white"
+        borderColor: Colors.additional,
+        backgroundColor: Colors.main,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: -2,
+            height: 4,
+        },
+        shadowOpacity: 0.8,
+        shadowRadius: 4,
+        elevation: 5
     },
     topRow: {
         flexDirection: "row",

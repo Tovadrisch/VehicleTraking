@@ -2,6 +2,7 @@ import { StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import { useContext, useState } from "react";
 import { LanguageContext } from "../localization/LanguageContext";
 import Button from "./Button";
+import Colors from "../constants/Colors";
 
 // Определение типов
 type props = {
@@ -21,7 +22,7 @@ export default function Filter({ filterIsOpen, currentFilterCategory, buttonPres
     const  FilterCategory = ({ category }) => {
         return (
             <TouchableOpacity
-                style={[styles.category, selectedCategory === category ? { borderLeftWidth: 3, borderBottomWidth: 3 } : undefined]}
+                style={[styles.category, selectedCategory === category ? { borderWidth: 2, borderColor: Colors.additional } : undefined]}
                 onPress={() => setSelectedCategory(category)}
             >
                 <Text >{get(category)}</Text>
@@ -65,8 +66,9 @@ export default function Filter({ filterIsOpen, currentFilterCategory, buttonPres
 // Стили
 const styles = StyleSheet.create({
     filterContainer: {
-        borderTopWidth: 1,
-        backgroundColor: "white"
+        borderTopWidth: 2,
+        borderColor: Colors.additional,
+        backgroundColor: Colors.main
     },
     filterWrap: {
         height: 40,
@@ -80,9 +82,18 @@ const styles = StyleSheet.create({
         padding: 5
     },
     category: {
+        backgroundColor: Colors.main,
         borderWidth: 1,
         paddingVertical: 5,
         paddingHorizontal: 15,
-        margin: 5
+        margin: 5,
+        shadowColor: "#000",
+        shadowOffset: {
+            width: -2,
+            height: 4,
+        },
+        shadowOpacity: 0.8,
+        shadowRadius: 4,
+        elevation: 5
     }
 });

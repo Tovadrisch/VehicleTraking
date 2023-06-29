@@ -5,7 +5,7 @@ import { NativeStackScreenProps } from "@react-navigation/native-stack";
 import VehiclesListCard from "../components/VehiclesListCard";
 import Filter from "../components/Filter";
 import data from "../data.json";
-import { BottomTabParamList } from "../navigation";
+import { BottomTabParamList } from "../navigation/Navigation";
 
 type props = NativeStackScreenProps<BottomTabParamList, "VehicleList">;
 
