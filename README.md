@@ -10,7 +10,7 @@
 1. Склонируйте репозиторий или загрузите исходный код.
 
 ```shell
-git clone <URL-репозитория>
+git clone https://github.com/Tovadrisch/VehicleTraking.git
 ```
 
 2. Перейдите в директорию проекта.
